@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<formbeans>
+		<bean name="panduan" class="business.PanduanForm"></bean>
+		<bean name="test" class="struts.form.testForm"></bean>
+	</formbeans>
+	<action-mapping>
+		<action name="panduan" type="business.PanduanForm" path="sss">
+			<forward name="chenggong" value="/view/MyJsp.jsp">
+			</forward>
+			<forward name="shibai" value="/view/error.jsp">
+			</forward>		
+		</action>
+		<action name="test" type="struts.action.testAction" path="/test">
+			<forward name="chenggong" value="/view/MyJsp.jsp">
+			</forward>
+			<forward name="shibai" value="/view/error.jsp">
+			</forward>	 
+		</action>
+	</action-mapping>
+	
+</struts>
